@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Abel%7COswald&display=swap%27');
+
+body{
+  padding: 0;
+  margin: 0;    
+}
+
+#container-flex{
+  max-width: 85%;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  width: 100%;
+  height: 40px;   
+  border-bottom: 2px #c3c3c3 solid;
+}
+
+nav ul{
+  list-style:none;
+  display: flex;
+  justify-content: space-between;
+  margin:0;
+  padding:0;
+}
+
+nav ul li{
+  float:left;
+  font-weight:bold;
+  text-align:center;
+  text-shadow: 0px 1px 0px #FFF;  
+}
+
+nav ul li a{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  color: #c3c3c3;
+  text-decoration: none;  
+  font-size: 16px;
+  font-family: Abel;
+}
+
+nav ul li:first-child a{
+  border-bottom: rgb(141, 122, 255) solid; 
+  color: rgb(141, 122, 255); 
+}
+
+section{
+  width: 95%;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding-left: 20px; 
+  box-sizing: border-box;
+}
+
+section #details{
+  width: 65%;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+}
+
+section #details #container-details{
+  width: 50%;
+  margin-top: 10px; 
+  font-family: Abel;
+}
+
+section #details #container-details .container-aritmetic{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+section #details #container-details .container-aritmetic .number{
+  width: 110px;
+  height: 50px;
+  border: 1px rgb(236, 236, 236) solid;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+section #details #container-details .container-aritmetic .aritmetic{
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  border: 1px #c3c3c3 solid;
+  color: rgb(141, 122, 255);
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+}
+
+section #details #container-details #next{
+  width: 92%;
+  height: 40px; 
+  margin-top: 30px; 
+}
+
+section #details #container-details #next a{
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: rgb(141, 122, 255);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px 0px;
+  transition: all 0.5s;
+}
+
+section #details #container-details #next a:hover{
+  background-color: rgba(21, 19, 22, 0.808);
+}
+
+section #information{
+  width: 34%;
+  height: 440px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px 0px; 
+}
+
+section #information #title{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-family: Oswald;
+  font-size: 20px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  background-color: rgb(67, 216, 146);
+}
+
+section #information #subtitle{
+  width: 95%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Oswald;
+  margin-top: 20px;
+}
+
+section #information #subtitle #arrow-description{
+  width: 60%;
+  height: 80px;
+  font-size: 18px;
+}
+
+section #information #subtitle #arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 80px;
+  font-size: 50px;
+  font-family: Abel;
+}
+
+section #information #description{
+  width: 90%;
+  font-family: Abel;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 0px 20px 0px 0px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 375px) {
+  #container-flex{
+    max-width: 375px;
+  }
+
+  nav ul li:nth-child(6), nav ul li:nth-child(7){
+    display: none;
+  }
+
+  nav ul li a{ 
+    width: 70px;
+    font-size: 10px;
+    padding-top: 3px;
+  }
+
+  section{
+    width: 100%;
+    padding-left: 0px; 
+  }
+
+  section #details{
+    width: 100%;
+    box-shadow: none;
+  }
+
+  section #details #container-details{
+    width: 70%;
+  }
+
+  section #details #container-details{
+    font-size: 14px;
+  }
+
+  section #details #container-details .container-aritmetic{
+    width: 250px;
+  }
+
+  section #details #container-details .container-aritmetic .number{
+    width: 90px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  section #details #container-details .container-aritmetic .aritmetic{
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  section #details #container-details #next{
+    width: 95%; 
+  }
+
+  section #information{
+    display: none;
+  }
+} 
